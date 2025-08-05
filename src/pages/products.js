@@ -11,11 +11,11 @@ function ProductsPage() {
         <>
             <h1>The Products Page</h1>
             <p>
-                Go back <Link to="/">home</Link>.
+                Go back <Link to='/'>home</Link>.
             </p>
             <ul>
                 {PRODUCTS.map((prod) => (
-                    <li key={prod.id}><Link to={`/products/${prod.id}`}>{prod.title}</Link></li>
+                    <li key={prod.id}><Link to={prod.id} >{prod.title}</Link></li>
                 ))}
             </ul>
         </>
